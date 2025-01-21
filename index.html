@@ -25,7 +25,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 10px 0;
+            margin: 6px 0;
             background-color: #ffffff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -33,7 +33,7 @@
             background-color: #007bff;
             color: white;
             text-align: center;
-            padding: 12px;
+            padding: 6px;
         }
         td {
             border: 1px solid #ccc;
@@ -120,31 +120,10 @@
         }
         button {
             font-family: 'Nanum Gothic', sans-serif;
+            text-align: center;
         }
         
-                /* 태블릿 화면 (768px ~ 1024px) */
-        @media (min-width: 768px) and (max-width: 1024px) {
-            p {
-                font-size: 16px; /* 폰트 크기 줄이기 */
-                line-height: 1.4;
-            }
-
-            .container {
-                padding: 10px;
-            }
-        }
-
-        /* 모바일 화면 (768px 이하) */
-        @media (max-width: 768px) {
-            p {
-                font-size: 14px;
-            }
-
-            .container {
-                padding: 5px;
-            }
-        }
-
+        
     </style>
 </head>
 <body>
@@ -173,10 +152,9 @@
                 <td>선택 이유</td>
                 <td><textarea id="reason" class="long-input" rows="3" placeholder="해당 업종을 선택한 이유를 적어주세요."></textarea></td>
             </tr>
-            
         </table>
-    </div> <br><br>
-
+    </div>
+    <hr style="border: none; border-top: 2px solid #b4c1ce; margin: 20px 0;">
     <div class="form-section">
         <h2>2. 상권 분석</h2>
         <h3>(1) 업종 정보</h3>
@@ -195,8 +173,7 @@
                 <td><input type="number" placeholder="숫자 입력" id="support-area-count" class="short-input"><span>개</span></td>
                 <td><input type="number" placeholder="숫자 입력" id="support-area-change" class="short-input"><span>%</span></td>
             </tr>
-        </table> <br>
-        
+        </table>
 
         <h3>(2) 매출 정보</h3>
         <table>
@@ -214,10 +191,10 @@
                 <td><input type="number" placeholder="숫자 입력" id="monthly-sales-count" class="short-input"><span>건</span></td>
                 <td><input type="number" placeholder="숫자 입력" id="sales-count-change" class="short-input"><span>%</span></td>
             </tr>
-        </table> <br><br>
+        </table>
         
     </div>
-
+    <hr style="border: none; border-top: 2px solid #b4c1ce; margin: 20px 0;">
     <div class="form-section">
         <h2>3. 판매 계획</h2>
         <table id="finance-table">
